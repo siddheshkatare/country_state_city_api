@@ -1,0 +1,162 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Country State City API",
+        "version": "0.1"
+    },
+    "paths": {
+        "/api/regions": {
+            "get": {
+                "summary": "Get all regions",
+                "operationId": "203e4abaaa4a25fd810934bfbd0de250",
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/subregions": {
+            "get": {
+                "summary": "Get all subregions",
+                "operationId": "1d5dd6cf945863dd41df4f6f44ae930e",
+                "parameters": [
+                    {
+                        "name": "regionId",
+                        "in": "query",
+                        "description": "Parameter with mutliple examples",
+                        "schema": {
+                            "type": "integer"
+                        },
+                        "examples": {
+                            "int": {
+                                "summary": "An int value."
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/countries": {
+            "get": {
+                "summary": "Get all countries",
+                "operationId": "71a95691749120556bcdbb33eb129aed",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "Parameter with mutliple examples",
+                        "schema": {
+                            "type": "integer"
+                        },
+                        "examples": {
+                            "int": {
+                                "summary": "An int value."
+                            },
+                            "India": {
+                                "summary": "Id for India",
+                                "value": 101
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/states/{countryId}": {
+            "get": {
+                "summary": "Get all states",
+                "operationId": "b0f8f701e8694be2bace10a6083a665f",
+                "parameters": [
+                    {
+                        "name": "countryId",
+                        "in": "path",
+                        "description": "Parameter with India examples",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        },
+                        "examples": {
+                            "India": {
+                                "summary": "Id for India",
+                                "value": 101
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/cities/{stateId}": {
+            "get": {
+                "summary": "Get all states",
+                "operationId": "5d919a740ba522f63d83135e2adbcd2d",
+                "parameters": [
+                    {
+                        "name": "stateId",
+                        "in": "path",
+                        "description": "Parameter with Maharashtra examples",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        },
+                        "examples": {
+                            "Maharashtra": {
+                                "summary": "Id for Maharashtra",
+                                "value": 4008
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        }
+    }
+}
