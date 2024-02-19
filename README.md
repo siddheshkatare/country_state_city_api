@@ -1,26 +1,23 @@
-![image](https://raw.githubusercontent.com/siddheshkatare/country_state_city_api/3fe0e2e744d50c23010f368cce0fc89a575feb4c/public/assets/images/world-logo.svg)
+![image](https://raw.githubusercontent.com/siddheshkatare/country_state_city_api/3fe0e2e744d50c23010f368cce0fc89a575feb4c/public/assets/images/world-logo.svg) 
 ## Country State City API
 <article class="docs-article" id="section-2">
-                    <header class="docs-header">
-                        <h1 class="docs-heading">APIs</h1>
-                        <section class="docs-intro">
-                            <p>To begin using our API, simply explore our documentation. Our endpoints are open and
-                                available for anyone to access, making it easy for you to integrate geographical data
-                                into your applications without any authentication requirements.</p>
-                        </section>
-                    </header>
-                    <section class="docs-section" id="item-2-1">
-                        <h2 class="section-heading">Regions</h2>
-                        <p>Get details about regions, including id, names, translations, and wikiDataId. </p>
-                        <h4>Get All Regions:</h4>
-                        <p>Get a list of all regions</p>
-                        <p>Method: <code>GET</code></p>
-                        <p>Path: <code>/api/regions</code></p>
-                        <p>Example: <a href="/api/regions" class="theme-link"
-                                target="_blank"><code>/api/regions</code></a></p>
-                                <h5>Response:</h5>
-                        <div class="docs-code-block">
-                            <pre class="shadow-lg rounded"><code class="json hljs">{
+    <header class="docs-header">
+        <h1 class="docs-heading">APIs</h1>
+        <section class="docs-intro">
+            <p>To begin using our API, simply explore our documentation. Our endpoints are open and available for anyone to access, making it easy for you to integrate geographical data into your applications without any authentication requirements.</p>
+        </section>
+    </header>
+    <section class="docs-section" id="item-2-1">
+        <h2 class="section-heading">Regions</h2>
+        <p>Get details about regions, including id, names, translations, and wikiDataId. </p>
+        <h4>Get All Regions:</h4>
+        <p>Get a list of all regions</p>
+        <p>Method: <code>GET</code></p>
+        <p>Path: <code>/api/regions</code></p>
+        <p>Example: <a href="/api/regions" class="theme-link" target="_blank"><code>/api/regions</code></a></p>
+        <h5>Response:</h5>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code class="json hljs">{
     <span class="hljs-attr">"status"</span>: <span class="hljs-number">200</span>,
     <span class="hljs-attr">"regions"</span>:[
         {
@@ -36,21 +33,20 @@
 }
 </code>
 </pre>
-                        </div>
-                    </section>
-                    <section class="docs-section" id="item-2-2">
-                        <h2 class="section-heading">Subregions</h2>
-                        <p>Get details about subregions, including is names, region_id, translations and wikiDataId.
-                        </p>
-                        <h4>Get All Subregions:</h4>
-                        <p>Get a list of all subregions</p>
-                        <p>Method: <code>GET</code></p>
-                        <p>Path: <code>/api/subregions</code></p>
-                        <p>Example: <a href="/api/subregions" class="theme-link"
-                                target="_blank"><code>/api/subregions</code></a></p>
-                                <h5>Response:</h5>
-                        <div class="docs-code-block">
-                            <pre class="shadow-lg rounded"><code class="json hljs">{
+        </div>
+    </section>
+    <section class="docs-section" id="item-2-2">
+        <h2 class="section-heading">Subregions</h2>
+        <p>Get details about subregions, including is names, region_id, translations and wikiDataId.
+        </p>
+        <h4>Get All Subregions:</h4>
+        <p>Get a list of all subregions</p>
+        <p>Method: <code>GET</code></p>
+        <p>Path: <code>/api/subregions</code></p>
+        <p>Example: <a href="/api/subregions" class="theme-link" target="_blank"><code>/api/subregions</code></a></p>
+        <h5>Response:</h5>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code class="json hljs">{
     <span class="hljs-attr">"status"</span>: <span class="hljs-number">200</span>,
     <span class="hljs-attr">"subregions"</span>:[
         {
@@ -67,18 +63,17 @@
 }
 </code>
 </pre>
-                        </div>
-                        </br>
-                        <h4>Get Subregion By Region Id:</h4>
-                        <p>Get all subregions that comes under provided region id</p>
-                        <p>Method: <code>GET</code></p>
-                        <p>Path: <code>/api/subregion</code></p>
-                        <p>Parameters: <code>regionId</code></p>
-                        <p>Example: <a href="/api/subregion?regionId=1" class="theme-link"
-                                target="_blank"><code>/api/subregion?regionId=1</code></a></p>
-                                 <h5>Response:</h5>
-                                  <div class="docs-code-block">
-                            <pre class="shadow-lg rounded"><code class="json hljs">{
+        </div>
+        </br>
+        <h4>Get Subregion By Region Id:</h4>
+        <p>Get all subregions that comes under provided region id</p>
+        <p>Method: <code>GET</code></p>
+        <p>Path: <code>/api/subregion</code></p>
+        <p>Parameters: <code>regionId</code></p>
+        <p>Example: <a href="/api/subregion?regionId=1" class="theme-link" target="_blank"><code>/api/subregion?regionId=1</code></a></p>
+        <h5>Response:</h5>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code class="json hljs">{
     <span class="hljs-attr">"status"</span>: <span class="hljs-number">200</span>,
     <span class="hljs-attr">"subregions"</span>:[
         {
@@ -95,20 +90,19 @@
 }
 </code>
 </pre>
-                        </div>
-                    </section>
+        </div>
+    </section>
     <section class="docs-section" id="item-2-3">
-                        <h2 class="section-heading">Countries</h2>
-                        <p>Get details about countries, including names, ISO codes, translations, etc. </p>
-                        <h4>Get All Countries:</h4>
-                        <p>Get a list of all countries</p>
-                        <p>Method: <code>GET</code></p>
-                        <p>Path: <code>/api/countries</code></p>
-                        <p>Example: <a href="/api/countries" class="theme-link"
-                                target="_blank"><code>/api/countries</code></a></p>
-                                <h5>Response:</h5>
-                        <div class="docs-code-block">
-                            <pre class="shadow-lg rounded"><code class="json hljs">{
+        <h2 class="section-heading">Countries</h2>
+        <p>Get details about countries, including names, ISO codes, translations, etc. </p>
+        <h4>Get All Countries:</h4>
+        <p>Get a list of all countries</p>
+        <p>Method: <code>GET</code></p>
+        <p>Path: <code>/api/countries</code></p>
+        <p>Example: <a href="/api/countries" class="theme-link" target="_blank"><code>/api/countries</code></a></p>
+        <h5>Response:</h5>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code class="json hljs">{
     <span class="hljs-attr">"status"</span>: <span class="hljs-number">200</span>,
     <span class="hljs-attr">"countries"</span>:[
         {
@@ -144,18 +138,17 @@
 }
 </code>
 </pre>
-                        </div>
-                        </br>
-                        <h4>Get Country By Id:</h4>
-                        <p>Get single country by id</p>
-                        <p>Method: <code>GET</code></p>
-                        <p>Path: <code>/api/countries</code></p>
-                        <p>Parameters: <code>id</code></p>
-                        <p>Example: <a href="/api/countries?id=1" class="theme-link"
-                                target="_blank"><code>/api/countries?id=1</code></a></p>
-                                <h5>Response:</h5>
-                        <div class="docs-code-block">
-                            <pre class="shadow-lg rounded"><code class="json hljs">{
+        </div>
+        </br>
+        <h4>Get Country By Id:</h4>
+        <p>Get single country by id</p>
+        <p>Method: <code>GET</code></p>
+        <p>Path: <code>/api/countries</code></p>
+        <p>Parameters: <code>id</code></p>
+        <p>Example: <a href="/api/countries?id=1" class="theme-link" target="_blank"><code>/api/countries?id=1</code></a></p>
+        <h5>Response:</h5>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code class="json hljs">{
     <span class="hljs-attr">"status"</span>: <span class="hljs-number">200</span>,
     <span class="hljs-attr">"country"</span>:{
         <span class="hljs-attr">"id"</span>: <span class="hljs-number">1</span>,
@@ -186,20 +179,19 @@
 }
 </code>
 </pre>
-                        </div>
-                    </section>
+        </div>
+    </section>
     <section class="docs-section" id="item-2-4">
-                        <h2 class="section-heading">States</h2>
-                        <p>Get a list of states by country, including names, country_id, country_code, type, etc. </p>
-                        <h4>Get States By Country Id :</h4>
-                        <p>Get a list of all states by country id</p>
-                        <p>Method: <code>GET</code></p>
-                        <p>Path: <code>/api/states/{countryId}</code></p>
-                        <p>Example: <a href="/api/states/101" class="theme-link"
-                                target="_blank"><code>/api/countries/101</code></a></p>
-                                <h5>Response:</h5>
-                        <div class="docs-code-block">
-                            <pre class="shadow-lg rounded"><code class="json hljs">{
+        <h2 class="section-heading">States</h2>
+        <p>Get a list of states by country, including names, country_id, country_code, type, etc. </p>
+        <h4>Get States By Country Id :</h4>
+        <p>Get a list of all states by country id</p>
+        <p>Method: <code>GET</code></p>
+        <p>Path: <code>/api/states/{countryId}</code></p>
+        <p>Example: <a href="/api/states/101" class="theme-link" target="_blank"><code>/api/countries/101</code></a></p>
+        <h5>Response:</h5>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code class="json hljs">{
     <span class="hljs-attr">"status"</span>: <span class="hljs-number">200</span>,
     <span class="hljs-attr">"states"</span>:[
         {
@@ -221,21 +213,20 @@
 }
 </code>
 </pre>
-                        </div>
-                    </section>
+        </div>
+    </section>
     <section class="docs-section" id="item-2-5">
-                        <h2 class="section-heading">City</h2>
-                        <p>Get list of all cities in a state, including names, state_id, state_code, country_id, etc.
-                        </p>
-                        <h4>Get All Cities:</h4>
-                        <p>Get a list of all cities</p>
-                        <p>Method: <code>GET</code></p>
-                        <p>Path: <code>/api/cities</code></p>
-                        <p>Example: <a href="/api/cities/4008" class="theme-link"
-                                target="_blank"><code>/api/cities/4008</code></a></p>
-                                <h5>Response:</h5>
-                        <div class="docs-code-block">
-                            <pre class="shadow-lg rounded"><code class="json hljs">{
+        <h2 class="section-heading">City</h2>
+        <p>Get list of all cities in a state, including names, state_id, state_code, country_id, etc.
+        </p>
+        <h4>Get All Cities:</h4>
+        <p>Get a list of all cities</p>
+        <p>Method: <code>GET</code></p>
+        <p>Path: <code>/api/cities</code></p>
+        <p>Example: <a href="/api/cities/4008" class="theme-link" target="_blank"><code>/api/cities/4008</code></a></p>
+        <h5>Response:</h5>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code class="json hljs">{
     <span class="hljs-attr">"status"</span>: <span class="hljs-number">200</span>,
     <span class="hljs-attr">"countries"</span>:[
         {
@@ -256,63 +247,49 @@
 }
 </code>
 </pre>
-                        </div>
-                    </section>
-    </article>
-    <article class="docs-article" id="section-3">
-                    <header class="docs-header">
-                        <h1 class="docs-heading">Key Features</h1>
-                        <section class="docs-intro">
-                            <p>Our API, built on Laravel, offers fast, reliable performance with comprehensive,
-                                regularly updated geographical data, ensuring easy integration for developers.</p>
-                        </section>
-                    </header>
-                     <section class="docs-section" id="item-3-1">
-                        <h2 class="section-heading">Efficiency</h2>
-                        <p>Our API, built on Laravel, guarantees rapid response times and dependable performance,
-                            ensuring a seamless experience for your applications.</p>
-                    </section>
-        <section class="docs-section" id="item-3-2">
-                        <h2 class="section-heading">Comprehensive Data</h2>
-                        <p>Access an extensive database containing detailed information on countries, states, and cities
-                            across the globe, catering to diverse geographical needs.</p>
-                    </section>
-                    <section class="docs-section" id="item-3-3">
-                        <h2 class="section-heading">Easy Integration</h2>
-                        <p>Seamlessly integrate our API into your applications with ease, thanks to our meticulously
-                            documented endpoints and user-friendly data structure.</p>
-                    </section>
-                    <section class="docs-section" id="item-3-4">
-                        <h2 class="section-heading">Regular Updates</h2>
-                        <p>Stay up-to-date with the latest geographical information as our database undergoes frequent
-                            updates, ensuring that you always have access to accurate and current data.</p>
-                    </section>
-                </article>
-                <article class="docs-article" id="section-4">
-                    <header class="docs-header">
-                        <h1 class="docs-heading">Start Building Today</h1>
-                        <section class="docs-intro">
-                            <p>Unlock the power of geographical data with the Country State City API. Dive into our
-                                documentation and start building innovative applications that leverage the richness of
-                                location-based information.</p>
-                        </section>
-                    </header>
-                </article>
-                <article class="docs-article" id="section-5">
-                    <header class="docs-header">
-                        <h1 class="docs-heading">Credits</h1>
-                        <section class="docs-intro">
-                            <p>We extend our gratitude to <a href="https://github.com/dr5hn" target="_blank"
-                                    rel="noopener noreferrer">Darshan Gada</a> for providing the open-source database
-                                used in
-                                our API. You can find the repository at
-                                <a href="http://github.com/dr5hn/countries-states-cities-database" target="_blank"
-                                    rel="noopener noreferrer">
-                                    https://github.com/dr5hn/countries-states-cities-database</a>.
-                            </p>
-                        </section>
-                    </header>
-                </article>
-            </div>
         </div>
-    </div>
+    </section>
+</article>
+<article class="docs-article" id="section-3">
+    <header class="docs-header">
+        <h1 class="docs-heading">Key Features</h1>
+        <section class="docs-intro">
+            <p>Our API, built on Laravel, offers fast, reliable performance with comprehensive, regularly updated geographical data, ensuring easy integration for developers.</p>
+        </section>
+    </header>
+    <section class="docs-section" id="item-3-1">
+        <h2 class="section-heading">Efficiency</h2>
+        <p>Our API, built on Laravel, guarantees rapid response times and dependable performance, ensuring a seamless experience for your applications.</p>
+    </section>
+    <section class="docs-section" id="item-3-2">
+        <h2 class="section-heading">Comprehensive Data</h2>
+        <p>Access an extensive database containing detailed information on countries, states, and cities across the globe, catering to diverse geographical needs.</p>
+    </section>
+    <section class="docs-section" id="item-3-3">
+        <h2 class="section-heading">Easy Integration</h2>
+        <p>Seamlessly integrate our API into your applications with ease, thanks to our meticulously documented endpoints and user-friendly data structure.</p>
+    </section>
+    <section class="docs-section" id="item-3-4">
+        <h2 class="section-heading">Regular Updates</h2>
+        <p>Stay up-to-date with the latest geographical information as our database undergoes frequent updates, ensuring that you always have access to accurate and current data.</p>
+    </section>
+</article>
+<article class="docs-article" id="section-4">
+    <header class="docs-header">
+        <h1 class="docs-heading">Start Building Today</h1>
+        <section class="docs-intro">
+            <p>Unlock the power of geographical data with the Country State City API. Dive into our documentation and start building innovative applications that leverage the richness of location-based information.</p>
+        </section>
+    </header>
+</article>
+<article class="docs-article" id="section-5">
+    <header class="docs-header">
+        <h1 class="docs-heading">Credits</h1>
+        <section class="docs-intro">
+            <p>We extend our gratitude to <a href="https://github.com/dr5hn" target="_blank" rel="noopener noreferrer">Darshan Gada</a> for providing the open-source database used in our API. You can find the repository at
+                <a href="http://github.com/dr5hn/countries-states-cities-database" target="_blank" rel="noopener noreferrer">
+                                    https://github.com/dr5hn/countries-states-cities-database</a>.
+            </p>
+        </section>
+    </header>
+</article>
