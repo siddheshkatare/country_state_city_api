@@ -2,14 +2,24 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-    <title>Country State City API</title>
+
+    <title>Country State City API - Free</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bootstrap Documentation Template For Software Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+
+    <meta name="description" content="Explore the world with ease using the Country State City API, offering comprehensive geographical data on countries, states, and cities worldwide. Built on Laravel and powered by the open-source database provided by Darshan Gada.">
+    <meta name="keywords" content="Country State City API, geographical data, Laravel API, Darshan Gada, countries, states, cities">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Country State City API">
+    <meta property="og:description" content="Explore the world with ease using the Country State City API, offering comprehensive geographical data on countries, states, and cities worldwide. Built on Laravel and powered by the open-source database provided by Darshan Gada.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://csc.sidsworld.co.in/">
+    <meta property="og:image" content="https://csc.sidsworld.co.in/assets/images/world-logo.svg">
+    <meta property="og:site_name" content="Country State City API">
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="shortcut icon" href="favicon.ico">
 
     <!-- Google Font -->
@@ -40,10 +50,8 @@
                 <div class="docs-top-utilities d-flex justify-content-end align-items-center">
 
                     <ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
-                        <li class="list-inline-item"><a href="https://github.com/siddheshkatare/country_state_city_api"
-                                target="_blank"><i class="fab fa-github fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/siddhesh-katare-a87aa0126"
-                                target="_blank"><i class="fab fa-linkedin fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="https://github.com/siddheshkatare/country_state_city_api" target="_blank"><i class="fab fa-github fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/siddhesh-katare-a87aa0126" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a></li>
                     </ul>
                     <!--
                                                                                                                                                         //social-list-->
@@ -264,10 +272,8 @@
         <div class="footer-bottom text-center py-5">
 
             <ul class="social-list list-unstyled pb-4 mb-0">
-                <li class="list-inline-item"><a href="https://github.com/siddheshkatare/country_state_city_api"
-                        target="_blank"><i class="fab fa-github fa-fw"></i></a></li>
-                <li class="list-inline-item"><a href="https://www.linkedin.com/in/siddhesh-katare-a87aa0126"
-                        target="_blank"><i class="fab fa-linkedin fa-fw"></i></a></li>
+                <li class="list-inline-item"><a href="https://github.com/siddheshkatare/country_state_city_api" target="_blank"><i class="fab fa-github fa-fw"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/siddhesh-katare-a87aa0126" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a></li>
             </ul>
             <small class="copyright">
                 Templete designed
