@@ -9,8 +9,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Bootstrap 4 Template For Software Startups">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+    <meta name="description"
+        content="Explore the world with ease using the Country State City API, offering comprehensive geographical data on countries, states, and cities worldwide. Built on Laravel and powered by the open-source database provided by Darshan Gada.">
+    <meta name="keywords"
+        content="Country State City API, geographical data, Laravel API, Darshan Gada, countries, states, cities">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Country State City API">
+    <meta property="og:description"
+        content="Explore the world with ease using the Country State City API, offering comprehensive geographical data on countries, states, and cities worldwide. Built on Laravel and powered by the open-source database provided by Darshan Gada.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="Your website URL">
+    <meta property="og:image" content="assets/images/world-logo.svg">
+    <meta property="og:site_name" content="Country State City API">
     <link rel="shortcut icon" href="favicon.ico">
 
     <!-- Google Font -->
@@ -40,7 +50,7 @@
                         <span></span>
                     </button>
                     <div class="site-logo">
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="/">
                             <img class="logo-icon me-2" src="assets/images/world-logo.svg" alt="logo">
                             <span class="logo-text"> Country State City <span class="text-alt"> API </span></span>
                         </a>
@@ -48,13 +58,12 @@
                 </div>
                 <!--//docs-logo-wrapper-->
                 <div class="docs-top-utilities d-flex justify-content-end align-items-center">
-
-
                     <ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
-                        <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a
+                                href="https://github.com/siddheshkatare/country_state_city_api"><i
+                                    class="fab fa-github fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/siddhesh-katare-a87aa0126"><i
+                                    class="fab fa-linkedin fa-fw"></i></a></li>
                     </ul>
                     <!--//social-list-->
                     <a href="/api/" class="btn btn-primary d-none d-lg-flex">Swagger</a>
@@ -73,7 +82,7 @@
 
             <nav id="docs-nav" class="docs-nav navbar">
                 <ul class="section-items list-unstyled nav flex-column pb-3">
-                    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span
+                    <li class="nav-item section-title"><a class="nav-link scrollto" href="#section-1"><span
                                 class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Introduction</a>
                     </li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Welcome</a></li>
@@ -86,16 +95,17 @@
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-2-4">States</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-2-5">Cities</a></li>
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span
-                                class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Key Features</a></li>
+                                class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Key Features</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Efficiency</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Comprehensive Data</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Easy Integration</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4">Regular Updates</a></li>
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span
-                                class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Start Building Today</a>
+                                class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Start Building
+                            Today</a>
                     </li>
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span
-                                class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Credits</a></li>
+                                class="theme-icon-holder me-2"><i class="fas fa-book-reader"></i></span>Credits</a></li>
 
 
                 </ul>
@@ -505,19 +515,16 @@
                 <footer class="footer">
                     <div class="container text-center py-5">
                         <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-                        <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"
-                                style="color: #fb866a;"></i> by <a class="theme-link"
+                        <small class="copyright">Templete designed with <span class="sr-only">love</span><i
+                                class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link"
                                 href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for
                             developers</small>
                         <ul class="social-list list-unstyled pt-4 mb-0">
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a>
-                            </li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a>
-                            </li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+                            <li class="list-inline-item"><a
+                                    href="https://github.com/siddheshkatare/country_state_city_api" target="_blank"><i
+                                        class="fab fa-github fa-fw"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/siddhesh-katare-a87aa0126"
+                                    target="_blank"><i class="fab fa-linkedin fa-fw"></i></a></li>
                         </ul>
                         <!--//social-list-->
                     </div>
