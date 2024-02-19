@@ -70,7 +70,7 @@
         <p>Method: <code>GET</code></p>
         <p>Path: <code>/api/subregion</code></p>
         <p>Parameters: <code>regionId</code></p>
-        <p>Example: <a href="https://csc.sidsworld.co.in/api/subregion?regionId=1" class="theme-link" target="_blank"><code>/api/subregion?regionId=1</code></a></p>
+        <p>Example: <a href="https://csc.sidsworld.co.in/api/subregions?regionId=1" class="theme-link" target="_blank"><code>/api/subregions?regionId=1</code></a></p>
         <h5>Response:</h5>
         <div class="docs-code-block">
             <pre class="shadow-lg rounded"><code class="json hljs">{
