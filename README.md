@@ -14,7 +14,7 @@
         <p>Get a list of all regions</p>
         <p>Method: <code>GET</code></p>
         <p>Path: <code>/api/regions</code></p>
-        <p>Example: <a href="/api/regions" class="theme-link" target="_blank"><code>/api/regions</code></a></p>
+        <p>Example: <a href="https://csc.sidsworld.co.in/api/regions" class="theme-link" target="_blank"><code>/api/regions</code></a></p>
         <h5>Response:</h5>
         <div class="docs-code-block">
             <pre class="shadow-lg rounded"><code class="json hljs">{
@@ -43,7 +43,7 @@
         <p>Get a list of all subregions</p>
         <p>Method: <code>GET</code></p>
         <p>Path: <code>/api/subregions</code></p>
-        <p>Example: <a href="/api/subregions" class="theme-link" target="_blank"><code>/api/subregions</code></a></p>
+        <p>Example: <a href="https://csc.sidsworld.co.in/api/subregions" class="theme-link" target="_blank"><code>/api/subregions</code></a></p>
         <h5>Response:</h5>
         <div class="docs-code-block">
             <pre class="shadow-lg rounded"><code class="json hljs">{
@@ -70,7 +70,7 @@
         <p>Method: <code>GET</code></p>
         <p>Path: <code>/api/subregion</code></p>
         <p>Parameters: <code>regionId</code></p>
-        <p>Example: <a href="/api/subregion?regionId=1" class="theme-link" target="_blank"><code>/api/subregion?regionId=1</code></a></p>
+        <p>Example: <a href="https://csc.sidsworld.co.in/api/subregion?regionId=1" class="theme-link" target="_blank"><code>/api/subregion?regionId=1</code></a></p>
         <h5>Response:</h5>
         <div class="docs-code-block">
             <pre class="shadow-lg rounded"><code class="json hljs">{
@@ -99,7 +99,7 @@
         <p>Get a list of all countries</p>
         <p>Method: <code>GET</code></p>
         <p>Path: <code>/api/countries</code></p>
-        <p>Example: <a href="/api/countries" class="theme-link" target="_blank"><code>/api/countries</code></a></p>
+        <p>Example: <a href="https://csc.sidsworld.co.in/api/countries" class="theme-link" target="_blank"><code>/api/countries</code></a></p>
         <h5>Response:</h5>
         <div class="docs-code-block">
             <pre class="shadow-lg rounded"><code class="json hljs">{
@@ -145,7 +145,7 @@
         <p>Method: <code>GET</code></p>
         <p>Path: <code>/api/countries</code></p>
         <p>Parameters: <code>id</code></p>
-        <p>Example: <a href="/api/countries?id=1" class="theme-link" target="_blank"><code>/api/countries?id=1</code></a></p>
+        <p>Example: <a href="https://csc.sidsworld.co.in/api/countries?id=1" class="theme-link" target="_blank"><code>/api/countries?id=1</code></a></p>
         <h5>Response:</h5>
         <div class="docs-code-block">
             <pre class="shadow-lg rounded"><code class="json hljs">{
@@ -188,7 +188,7 @@
         <p>Get a list of all states by country id</p>
         <p>Method: <code>GET</code></p>
         <p>Path: <code>/api/states/{countryId}</code></p>
-        <p>Example: <a href="/api/states/101" class="theme-link" target="_blank"><code>/api/countries/101</code></a></p>
+        <p>Example: <a href="https://csc.sidsworld.co.in/api/states/101" class="theme-link" target="_blank"><code>/api/countries/101</code></a></p>
         <h5>Response:</h5>
         <div class="docs-code-block">
             <pre class="shadow-lg rounded"><code class="json hljs">{
@@ -223,7 +223,7 @@
         <p>Get a list of all cities</p>
         <p>Method: <code>GET</code></p>
         <p>Path: <code>/api/cities</code></p>
-        <p>Example: <a href="/api/cities/4008" class="theme-link" target="_blank"><code>/api/cities/4008</code></a></p>
+        <p>Example: <a href="https://csc.sidsworld.co.in/api/cities/4008" class="theme-link" target="_blank"><code>/api/cities/4008</code></a></p>
         <h5>Response:</h5>
         <div class="docs-code-block">
             <pre class="shadow-lg rounded"><code class="json hljs">{
