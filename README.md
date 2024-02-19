@@ -1,5 +1,8 @@
 ![image](https://raw.githubusercontent.com/siddheshkatare/country_state_city_api/3fe0e2e744d50c23010f368cce0fc89a575feb4c/public/assets/images/world-logo.svg) 
 ## Country State City API
+
+<a href="https://csc.sidsworld.co.in/" class="theme-link" target="_blank">Visit Website <code>https://csc.sidsworld.co.in/</code></a>
+
 <article class="docs-article" id="section-2">
     <header class="docs-header">
         <h1 class="docs-heading">APIs</h1>
@@ -68,7 +71,7 @@
         <h4>Get Subregion By Region Id:</h4>
         <p>Get all subregions that comes under provided region id</p>
         <p>Method: <code>GET</code></p>
-        <p>Path: <code>/api/subregion</code></p>
+        <p>Path: <code>/api/subregions</code></p>
         <p>Parameters: <code>regionId</code></p>
         <p>Example: <a href="https://csc.sidsworld.co.in/api/subregions?regionId=1" class="theme-link" target="_blank"><code>/api/subregions?regionId=1</code></a></p>
         <h5>Response:</h5>
