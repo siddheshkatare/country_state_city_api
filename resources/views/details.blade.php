@@ -445,52 +445,6 @@
                                 target="_blank"><code>/api/citiesByCountry/101</code></a></p>
 
                         <h5>Response:</h5>
-                        <!-- 
-                        {
-  "status": 200,
-  "cities": {
-    "current_page": 1,
-    "data": [
-      {
-        "id": 57584,
-        "name": "Abhaneri",
-        "state_id": 4014,
-        "state_code": "RJ",
-        "country_id": 101,
-        "country_code": "IN",
-        "latitude": "27.00743000",
-        "longitude": "76.60760000",
-        "created_at": "2019-10-06T00:23:43.000000Z",
-        "updated_at": "2019-10-06T00:23:43.000000Z",
-        "flag": 1,
-        "wikiDataId": "Q4667324",
-        "state": {
-          "id": 4014,
-          "name": "Rajasthan",
-          "country_id": 101,
-          "country_code": "IN",
-          "fips_code": "24",
-          "iso2": "RJ",
-          "type": "state",
-          "latitude": "27.02380360",
-          "longitude": "74.21793260",
-          "created_at": "2019-10-05T23:18:57.000000Z",
-          "updated_at": "2022-03-13T12:57:52.000000Z",
-          "flag": 1,
-          "wikiDataId": "Q1437"
-        }
-      },
-      ...
-      ],
-    "next_page_url": "http://127.0.0.1:8000/api/citiesByCountry/101?page=2",
-    "path": "http://127.0.0.1:8000/api/citiesByCountry/101",
-    "per_page": 10,
-    "prev_page_url": null,
-    "to": 10,
-    "total": 4210
-  }
-}
-                        -->
                         <div class="docs-code-block">
                             <pre class="shadow-lg rounded"><code class="json hljs">{
     <span class="hljs-attr">"status"</span>: <span class="hljs-number">200</span>,

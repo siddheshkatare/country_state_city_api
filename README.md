@@ -251,6 +251,87 @@
 </code>
 </pre>
         </div>
+        <h4>Get Cities by Country:</h4>
+        <p>Get a list of all cities in a country</p>
+        <p>Method: <code>GET</code></p>
+        <p>Path: <code>/api/citiesByCountry/{countryId}</code></p>
+        <p>Example: <a href="/api/citiesByCountry/101" class="theme-link"
+                target="_blank"><code>/api/citiesByCountry/101</code></a></p>
+        <h5>Response:</h5>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code class="json hljs">{
+    <span class="hljs-attr">"status"</span>: <span class="hljs-number">200</span>,
+    <span class="hljs-attr">"cities"</span>:[
+        { 
+            <span class="hljs-attr">"id"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Andaman and Nicobar Islands"</span>,
+            <span class="hljs-attr">"state_id"</span>: <span class="hljs-number">4008</span>,
+            <span class="hljs-attr">"state_code"</span>: <span class="hljs-string">"MH"</span>,
+            <span class="hljs-attr">"country_id"</span>: <span class="hljs-number">101</span>,
+            <span class="hljs-attr">"country_code"</span>: <span class="hljs-string">"IN"</span>,
+            <span class="hljs-attr">"latitude"</span>: <span class="hljs-string">"21.25665000"</span>,
+            <span class="hljs-attr">"longitude"</span>: <span class="hljs-string">"77.51006000"</span>,
+            <span class="hljs-attr">"wikiDataId"</span>: <span class="hljs-string">"Q490886"</span>,
+        },
+        {
+            ...
+        }
+    ],
+    "next_page_url": "http://127.0.0.1:8000/api/citiesByCountry/101?page=2",
+    "path": "http://127.0.0.1:8000/api/citiesByCountry/101",
+    "per_page": 10,
+    "prev_page_url": null,
+    "to": 10,
+    "total": 4210
+}
+</code>
+</pre>
+        </div>
+        <h4>Get Cities by Country with search:</h4>
+        <p>Get a list of all cities in a country with search max limit 10 cities</p>
+        <p>Method: <code>GET</code></p>
+        <p>Path: <code>/api/citiesByCountry/{countryId}/search/{search}</code></p>
+        <p>Example: <a href="/api/citiesByCountry/101/search/indore" class="theme-link"
+                target="_blank"><code>/api/citiesByCountry/101/search/nashik</code></a></p>
+        <h5>Response:</h5>
+        <div class="docs-code-block">
+            <pre class="shadow-lg rounded"><code class="json hljs">{
+    <span class="hljs-attr">"status"</span>: <span class="hljs-number">200</span>,
+    <span class="hljs-attr">"cities"</span>:[
+        {   
+            <span class="hljs-attr">"id"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Nashik"</span>,
+            <span class="hljs-attr">"state_id"</span>: <span class="hljs-number">4008</span>,
+            <span class="hljs-attr">"state_code"</span>: <span class="hljs-string">"MH"</span>,
+            <span class="hljs-attr">"country_id"</span>: <span class="hljs-number">101</span>,
+            <span class="hljs-attr">"country_code"</span>: <span class="hljs-string">"IN"</span>,
+            <span class="hljs-attr">"latitude"</span>: <span class="hljs-string">"21.25665000"</span>,
+            <span class="hljs-attr">"longitude"</span>: <span class="hljs-string">"77.51006000"</span>,
+            <span class="hljs-attr">"wikiDataId"</span>: <span class="hljs-string">"Q490886"</span>,
+            <span class="hljs-attr">"state"</span>: {
+                <span class="hljs-attr">"id"</span>: <span class="hljs-number">4008</span>,
+                <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Maharashtra"</span>,
+                <span class="hljs-attr">"country_id"</span>: <span class="hljs-number">101</span>,
+                <span class="hljs-attr">"country_code"</span>: <span class="hljs-string">"IN"</span>,
+                <span class="hljs-attr">"fips_code"</span>: <span class="hljs-string">"16"</span>,
+                <span class="hljs-attr">"iso2"</span>: <span class="hljs-string">"MH"</span>,
+                <span class="hljs-attr">"type"</span>: <span class="hljs-string">"state"</span>,
+                <span class="hljs-attr">"latitude"</span>: <span class="hljs-string">"19.75147980"</span>,
+                <span class="hljs-attr">"longitude"</span>: <span class="hljs-string">"75.71388840"</span>,
+                <span class="hljs-attr">"created_at"</span>: <span class="hljs-string">"2019-10-05T23:18:57.000000Z"</span>,
+                <span class="hljs-attr">"updated_at"</span>: <span class="hljs-string">"2022-03-13T12:57:52.000000Z"</span>,
+                <span class="hljs-attr">"flag"</span>: <span class="hljs-number">1</span>,
+                <span class="hljs-attr">"wikiDataId"</span>: <span class="hljs-string">"Q1191"</span>,
+            },
+        },
+        {
+            ...
+        }
+    ],
+}
+</code>
+</pre>
+        </div>
     </section>
 </article>
 <article class="docs-article" id="section-3">
