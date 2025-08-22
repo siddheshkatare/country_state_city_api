@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Regions extends Model
+class Region extends Model
 {
     use HasFactory;
 
@@ -18,4 +18,9 @@ class Regions extends Model
         'created_at',
         'updated_at',
     ];
+
+    public function subregions()
+    {
+        return $this->hasMany(SubRegion::class);
+    }
 }

@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class States extends Model
+class State extends Model
 {
     use HasFactory;
 
@@ -25,4 +25,14 @@ class States extends Model
         'created_at',
         'updated_at',
     ];
+
+    public function country()
+    {
+        return $this->belongsTo(Country::class);
+    }
+
+    public function cities()
+    {
+        return $this->hasMany(City::class);
+    }    
 }

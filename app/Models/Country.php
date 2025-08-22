@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Countries extends Model
+class Country extends Model
 {
     use HasFactory;
 
@@ -39,4 +39,14 @@ class Countries extends Model
         'flag',
         'wikiDataId',
     ];
+
+    public function states()
+    {
+        return $this->hasMany(State::class);
+    }
+
+    public function cities()
+    {
+        return $this->hasMany(City::class);
+    }
 }

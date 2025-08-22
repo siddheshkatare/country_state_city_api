@@ -24,4 +24,14 @@ class City extends Model
         'flag',
         'wikiDataId',
     ];
+
+    public function state()
+    {
+        return $this->belongsTo(State::class,'state_id','id');
+    }
+
+    public function country()
+    {
+        return $this->belongsTo(Country::class,'country_id','id');
+    }
 }
