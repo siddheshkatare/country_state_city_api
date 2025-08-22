@@ -157,6 +157,89 @@
                     }
                 }
             }
+        },
+        "/api/citiesByCountry/{countryId}": {
+            "get": {
+                "summary": "Get all cities by country",
+                "operationId": "aca0664c82db999d215d506f2ee5c09c",
+                "parameters": [
+                    {
+                        "name": "countryId",
+                        "in": "path",
+                        "description": "Parameter with India examples",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        },
+                        "examples": {
+                            "India": {
+                                "summary": "Id for India",
+                                "value": 101
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/citiesByCountry/{countryId}/search/{search}": {
+            "get": {
+                "summary": "Get all cities by country",
+                "operationId": "7d53c3365df81db42e739eb143dcbe0e",
+                "parameters": [
+                    {
+                        "name": "countryId",
+                        "in": "path",
+                        "description": "Parameter with India examples",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        },
+                        "examples": {
+                            "India": {
+                                "summary": "Id for India",
+                                "value": 101
+                            }
+                        }
+                    },
+                    {
+                        "name": "search",
+                        "in": "path",
+                        "description": "Parameter with Delhi examples",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        },
+                        "examples": {
+                            "Delhi": {
+                                "summary": "Name for Delhi",
+                                "value": "Delhi"
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
         }
     }
 }

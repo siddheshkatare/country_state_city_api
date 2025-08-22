@@ -51,7 +51,7 @@
 
                     <ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
                         <li class="list-inline-item"><a href="https://github.com/siddheshkatare/country_state_city_api" target="_blank"><i class="fab fa-github fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/siddhesh-katare-a87aa0126" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/siddhesh-katare" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a></li>
                     </ul>
                     <!--
                                                                                                                                                         //social-list-->
@@ -273,22 +273,12 @@
 
             <ul class="social-list list-unstyled pb-4 mb-0">
                 <li class="list-inline-item"><a href="https://github.com/siddheshkatare/country_state_city_api" target="_blank"><i class="fab fa-github fa-fw"></i></a></li>
-                <li class="list-inline-item"><a href="https://www.linkedin.com/in/siddhesh-katare-a87aa0126" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/siddhesh-katare" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a></li>
             </ul>
-            <small class="copyright">
-                Templete designed
-                with
-                <span class="sr-only">
-                    love
-                </span>
-                <i class="fas fa-heart" style="color: #fb866a;"></i>
-                by
-                <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">
-                    Xiaoying
-                    Riley
-                </a>
-                for
-                developers</small>
+            <small class="copyright">Developed by <a class="theme-link" href="https://www.linkedin.com/in/siddhesh-katare" target="_blank">Siddhesh Katare</a> | Template designed with <span class="sr-only">love</span><i
+                                class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link"
+                                href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for
+                            developers</small>
 
 
         </div>

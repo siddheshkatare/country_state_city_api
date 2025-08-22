@@ -62,7 +62,7 @@
                         <li class="list-inline-item"><a
                                 href="https://github.com/siddheshkatare/country_state_city_api"><i
                                     class="fab fa-github fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/siddhesh-katare-a87aa0126"><i
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/siddhesh-katare"><i
                                     class="fab fa-linkedin fa-fw"></i></a></li>
                     </ul>
                     <!--//social-list-->
@@ -86,7 +86,7 @@
                                 class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Introduction</a>
                     </li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Welcome</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">About Our API</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">About API</a></li>
                     <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span
                                 class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>APIs</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Regions</a></li>
@@ -119,7 +119,7 @@
                 <!-- Introduction -->
                 <article class="docs-article" id="section-1">
                     <header class="docs-header">
-                        <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 2024-02-17</span>
+                        <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 2025-08-22</span>
                         </h1>
                         <section class="docs-intro">
                             <p>Welcome to the Country State City API, your go-to resource for accessing
@@ -140,8 +140,8 @@
                     </section>
                     <!--//docs-intro-->
                     <section class="docs-section" id="item-1-2">
-                        <h5 class="section-heading">About Our API</h5>
-                        <p>Our API provides developers with easy access to accurate information about countries,
+                        <h5 class="section-heading">About API</h5>
+                        <p>This API provides developers with easy access to accurate information about countries,
                             states,
                             and cities. With just a few API calls, you can retrieve a wealth of geographical data,
                             including:</p>
@@ -436,6 +436,137 @@
 </code>
 </pre>
                         </div>
+
+                        <h4>Get Cities by Country:</h4>
+                        <p>Get a list of all cities in a country</p>
+                        <p>Method: <code>GET</code></p>
+                        <p>Path: <code>/api/citiesByCountry/{countryId}</code></p>
+                        <p>Example: <a href="/api/citiesByCountry/101" class="theme-link"
+                                target="_blank"><code>/api/citiesByCountry/101</code></a></p>
+
+                        <h5>Response:</h5>
+                        <!-- 
+                        {
+  "status": 200,
+  "cities": {
+    "current_page": 1,
+    "data": [
+      {
+        "id": 57584,
+        "name": "Abhaneri",
+        "state_id": 4014,
+        "state_code": "RJ",
+        "country_id": 101,
+        "country_code": "IN",
+        "latitude": "27.00743000",
+        "longitude": "76.60760000",
+        "created_at": "2019-10-06T00:23:43.000000Z",
+        "updated_at": "2019-10-06T00:23:43.000000Z",
+        "flag": 1,
+        "wikiDataId": "Q4667324",
+        "state": {
+          "id": 4014,
+          "name": "Rajasthan",
+          "country_id": 101,
+          "country_code": "IN",
+          "fips_code": "24",
+          "iso2": "RJ",
+          "type": "state",
+          "latitude": "27.02380360",
+          "longitude": "74.21793260",
+          "created_at": "2019-10-05T23:18:57.000000Z",
+          "updated_at": "2022-03-13T12:57:52.000000Z",
+          "flag": 1,
+          "wikiDataId": "Q1437"
+        }
+      },
+      ...
+      ],
+    "next_page_url": "http://127.0.0.1:8000/api/citiesByCountry/101?page=2",
+    "path": "http://127.0.0.1:8000/api/citiesByCountry/101",
+    "per_page": 10,
+    "prev_page_url": null,
+    "to": 10,
+    "total": 4210
+  }
+}
+                        -->
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="json hljs">{
+    <span class="hljs-attr">"status"</span>: <span class="hljs-number">200</span>,
+    <span class="hljs-attr">"cities"</span>:[
+        { 
+            <span class="hljs-attr">"id"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Andaman and Nicobar Islands"</span>,
+            <span class="hljs-attr">"state_id"</span>: <span class="hljs-number">4008</span>,
+            <span class="hljs-attr">"state_code"</span>: <span class="hljs-string">"MH"</span>,
+            <span class="hljs-attr">"country_id"</span>: <span class="hljs-number">101</span>,
+            <span class="hljs-attr">"country_code"</span>: <span class="hljs-string">"IN"</span>,
+            <span class="hljs-attr">"latitude"</span>: <span class="hljs-string">"21.25665000"</span>,
+            <span class="hljs-attr">"longitude"</span>: <span class="hljs-string">"77.51006000"</span>,
+            <span class="hljs-attr">"wikiDataId"</span>: <span class="hljs-string">"Q490886"</span>,
+        },
+        {
+            ...
+        }
+    ],
+    "next_page_url": "http://127.0.0.1:8000/api/citiesByCountry/101?page=2",
+    "path": "http://127.0.0.1:8000/api/citiesByCountry/101",
+    "per_page": 10,
+    "prev_page_url": null,
+    "to": 10,
+    "total": 4210
+}
+</code>
+</pre>
+                        </div>
+
+                        <h4>Get Cities by Country with search:</h4>
+                        <p>Get a list of all cities in a country with search max limit 10 cities</p>
+                        <p>Method: <code>GET</code></p>
+                        <p>Path: <code>/api/citiesByCountry/{countryId}/search/{search}</code></p>
+                        <p>Example: <a href="/api/citiesByCountry/101/search/indore" class="theme-link"
+                                target="_blank"><code>/api/citiesByCountry/101/search/nashik</code></a></p>
+
+                        <h5>Response:</h5>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="json hljs">{
+    <span class="hljs-attr">"status"</span>: <span class="hljs-number">200</span>,
+    <span class="hljs-attr">"cities"</span>:[
+        {   
+            <span class="hljs-attr">"id"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Nashik"</span>,
+            <span class="hljs-attr">"state_id"</span>: <span class="hljs-number">4008</span>,
+            <span class="hljs-attr">"state_code"</span>: <span class="hljs-string">"MH"</span>,
+            <span class="hljs-attr">"country_id"</span>: <span class="hljs-number">101</span>,
+            <span class="hljs-attr">"country_code"</span>: <span class="hljs-string">"IN"</span>,
+            <span class="hljs-attr">"latitude"</span>: <span class="hljs-string">"21.25665000"</span>,
+            <span class="hljs-attr">"longitude"</span>: <span class="hljs-string">"77.51006000"</span>,
+            <span class="hljs-attr">"wikiDataId"</span>: <span class="hljs-string">"Q490886"</span>,
+            <span class="hljs-attr">"state"</span>: {
+                <span class="hljs-attr">"id"</span>: <span class="hljs-number">4008</span>,
+                <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Maharashtra"</span>,
+                <span class="hljs-attr">"country_id"</span>: <span class="hljs-number">101</span>,
+                <span class="hljs-attr">"country_code"</span>: <span class="hljs-string">"IN"</span>,
+                <span class="hljs-attr">"fips_code"</span>: <span class="hljs-string">"16"</span>,
+                <span class="hljs-attr">"iso2"</span>: <span class="hljs-string">"MH"</span>,
+                <span class="hljs-attr">"type"</span>: <span class="hljs-string">"state"</span>,
+                <span class="hljs-attr">"latitude"</span>: <span class="hljs-string">"19.75147980"</span>,
+                <span class="hljs-attr">"longitude"</span>: <span class="hljs-string">"75.71388840"</span>,
+                <span class="hljs-attr">"created_at"</span>: <span class="hljs-string">"2019-10-05T23:18:57.000000Z"</span>,
+                <span class="hljs-attr">"updated_at"</span>: <span class="hljs-string">"2022-03-13T12:57:52.000000Z"</span>,
+                <span class="hljs-attr">"flag"</span>: <span class="hljs-number">1</span>,
+                <span class="hljs-attr">"wikiDataId"</span>: <span class="hljs-string">"Q1191"</span>,
+            },
+        },
+        {
+            ...
+        }
+    ],
+}
+</code>
+</pre>
+                        </div>
                     </section>
                     <!--//section-->
 
@@ -514,8 +645,9 @@
 
                 <footer class="footer">
                     <div class="container text-center py-5">
-                        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-                        <small class="copyright">Templete designed with <span class="sr-only">love</span><i
+                    
+                    <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+                        <small class="copyright">Developed by <a class="theme-link" href="https://www.linkedin.com/in/siddhesh-katare" target="_blank">Siddhesh Katare</a> | Template designed with <span class="sr-only">love</span><i
                                 class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link"
                                 href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for
                             developers</small>
@@ -523,7 +655,7 @@
                             <li class="list-inline-item"><a
                                     href="https://github.com/siddheshkatare/country_state_city_api" target="_blank"><i
                                         class="fab fa-github fa-fw"></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/siddhesh-katare-a87aa0126"
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/siddhesh-katare"
                                     target="_blank"><i class="fab fa-linkedin fa-fw"></i></a></li>
                         </ul>
                         <!--//social-list-->

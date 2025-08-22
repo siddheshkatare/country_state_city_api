@@ -21,3 +21,6 @@ Route::get('subregions', [CscControler::class, 'subregions']);
 Route::get('countries', [CscControler::class, 'countries']);
 Route::get('states/{countryId}', [CscControler::class, 'states']);
 Route::get('cities/{stateId}', [CscControler::class, 'cities']);
+Route::get('citiesByCountry/{countryId}', [CscControler::class, 'citiesByCountry']);
+Route::get('citiesByCountry/{countryId}/search/{search}', [CscControler::class, 'citiesByCountrySearch']);
+

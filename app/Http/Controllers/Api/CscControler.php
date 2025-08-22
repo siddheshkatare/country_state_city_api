@@ -3,12 +3,12 @@
 namespace App\Http\Controllers\Api;
 
 use App\Models\City;
-use App\Models\States;
-use App\Models\Regions;
-use App\Models\Countries;
+use App\Models\State;
+use App\Models\Region;
+use App\Models\Country;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\SubRegions;
+use App\Models\SubRegion;
 
 /**
  * @OA\Info(
@@ -51,7 +51,7 @@ class CscControler extends Controller
      */
     public function regions()
     {
-        $regions = Regions::all();
+        $regions = Region::all();
 
 
         if ($regions == null || count($regions) == 0) {
@@ -100,9 +100,9 @@ class CscControler extends Controller
 
         if ($regionId == null) {
 
-            $subRegions = SubRegions::all();
+            $subRegions = SubRegion::all();
         } else {
-            $subRegions = SubRegions::where('region_id', $regionId)->get();
+            $subRegions = SubRegion::where('region_id', $regionId)->get();
         }
 
         if ($subRegions == null || count($subRegions) == 0) {
@@ -152,13 +152,13 @@ class CscControler extends Controller
         $id = $request->id;
         if ($id == null) {
 
-            $countries = Countries::all();
+            $countries = Country::all();
             $data = [
                 "status" => 200,
                 "countries" => $countries
             ];
         } else {
-            $country = Countries::where('id', $id)->first();
+            $country = Country::where('id', $id)->first();
 
             if ($country == null) {
                 $data = [
@@ -206,7 +206,7 @@ class CscControler extends Controller
      */
     public function states($countryId)
     {
-        $states = States::where('country_id', $countryId)->orderBy('name', 'asc')->get();
+        $states = State::where('country_id', $countryId)->orderBy('name', 'asc')->get();
 
 
         if ($states == null || count($states) == 0) {
@@ -255,6 +255,107 @@ class CscControler extends Controller
     public function cities($stateId)
     {
         $cities = City::where('state_id', $stateId)->orderBy('name', 'asc')->get();
+
+        if ($cities == null || count($cities) == 0) {
+            $data = [
+                "status" => 404,
+                "message" => "Cities not found"
+            ];
+            return response()->json($data, 404);
+        }
+
+        $data = [
+            "status" => 200,
+            "cities" => $cities
+        ];
+        return response()->json($data, 200);
+    }
+
+    /// cities by country
+    /**
+     * @OA\Get(
+     *     path="/api/citiesByCountry/{countryId}",
+     *     summary="Get all cities by country",
+     *     @OA\Parameter(
+     *         description="Parameter with India examples",
+     *         in="path",
+     *         name="countryId",
+     *         required=true,
+     *         @OA\Schema(type="integer"),
+     *         @OA\Examples(example="India", value=101, summary="Id for India"),
+     *     ),
+     *     @OA\Response(
+     *         response=200,
+     *         description="Success"
+     *     ),
+     *     @OA\Response(
+     *         response=404,
+     *         description="Not Found"
+     *     ),
+     *     @OA\Response(
+     *         response=500,
+     *         description="Internal Server Error"
+     *     )
+     * )
+     */
+    public function citiesByCountry($countryId)
+    {
+        $cities = City::where('country_id', $countryId)->with('state')->orderBy('name', 'asc')->paginate(10);
+
+        if ($cities == null || count($cities) == 0) {
+            $data = [
+                "status" => 404,
+                "message" => "Cities not found"
+            ];
+            return response()->json($data, 404);
+        }
+
+        $data = [
+            "status" => 200,
+            "cities" => $cities
+        ];
+        return response()->json($data, 200);
+    }
+
+    /// cities by country search
+    /**
+     * @OA\Get(
+     *     path="/api/citiesByCountry/{countryId}/search/{search}",
+     *     summary="Get all cities by country",
+     *     @OA\Parameter(
+     *         description="Parameter with India examples",
+     *         in="path",
+     *         name="countryId",
+     *         required=true,
+     *         @OA\Schema(type="integer"),
+     *         @OA\Examples(example="India", value=101, summary="Id for India"),
+     *     ),
+     *     @OA\Parameter(
+     *         description="Parameter with Delhi examples",
+     *         in="path",
+     *         name="search",
+     *         required=true,
+     *         @OA\Schema(type="string"),
+     *         @OA\Examples(example="Delhi", value="Delhi", summary="Name for Delhi"),
+     *     ),
+     *     @OA\Response(
+     *         response=200,
+     *         description="Success"
+     *     ),
+     *     @OA\Response(
+     *         response=404,
+     *         description="Not Found"
+     *     ),
+     *     @OA\Response(
+     *         response=500,
+     *         description="Internal Server Error"
+     *     )
+     * )
+     */
+    public function citiesByCountrySearch($countryId, $search)
+    {
+        // search by name with state name
+        $cities = City::where('country_id', $countryId)->with('state')->where('name', 'like', $search . '%')->orderBy('name', 'asc')->limit(10)->get();
 
         if ($cities == null || count($cities) == 0) {
             $data = [
